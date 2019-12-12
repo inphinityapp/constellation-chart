@@ -1,0 +1,16 @@
+<div qv-extension style="height: 100%; position: relative; overflow: auto;" class="ng-scope">
+    <svg viewBox="-100 -100 200 200" style="width: 100%; height: 100%;">
+	 <line ng-attr-x1="{{i.x1}}" ng-attr-y1="{{i.y1}}" ng-attr-x2="{{i.x2}}" ng-attr-y2="{{i.y2}}" style="stroke:black;stroke-width:0.5" ng-repeat="i in lines"/>
+	 <g ng-repeat="i in dots" ng-click="select(i)">
+    	<circle 
+    		ng-attr-cx="{{i.x}}"
+    		ng-attr-cy="{{i.y}}"
+    		ng-attr-r="{{i.size}}" 
+    		ng-attr-fill="{{i.color}}"
+    		ng-attr-data="{{i}}"
+    		style="stroke:black;stroke-width:{{i.state=='PS'?0.5:0}}"
+    	/>
+    	<text  ng-attr-x="{{i.x}}" ng-attr-y="{{i.y}}" alignment-baseline="middle"  text-anchor="middle" fill="black" font-size="5">{{i.text}}</text>
+	</g>
+    </svg>
+</div>

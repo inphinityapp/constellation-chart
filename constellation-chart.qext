@@ -1,0 +1,14 @@
+{
+	"name": "Constellation chart",
+	"description": "Plot connected dots with variable sizes and colors on XY plane",
+	"type": "visualization",
+	"version": "1.0.0",
+	"author": "Tomas Janco, janco@inphinity.xyz",
+	"homepage": "https://www.inphinity.xyz",
+	"keywords": "qlik-sense, visualization",
+	"license": "MIT",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}
